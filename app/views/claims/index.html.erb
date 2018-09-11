@@ -1,0 +1,35 @@
+<div class="col-md-12">
+  
+  <br/>
+
+
+  <div class="card" style="">
+    <div class="card-header">
+      Claims
+      <%=link_to "Add Claim", new_claim_path(), class: "btn btn-primary btn-sm pull-right" %>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @claims.each do |claim| %>
+          <tr>
+            <th scope="row"><%= claim.id %></th>
+            <td><%= claim.name %></td>
+            <td>
+              <%=link_to "Images", claim_images_path(claim.id), class: "btn btn-primary btn-sm", method: :get %>
+              <%=link_to "Delete", claim_path(claim.id), method: :delete, class: "btn btn-danger btn-sm", data: {confirm: "Are you sure, you want to delete this claim?"} %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  
+</div>

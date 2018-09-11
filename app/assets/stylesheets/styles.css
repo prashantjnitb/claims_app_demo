@@ -1,0 +1,54 @@
+.body_container {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.file_upload_area {
+  min-height: 200px;
+  width: 100%;
+  background: #d4d4d4;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.image_tag {
+  width: 40%;
+  height: 150px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.progress-bar {
+  background: #EFC7C4;
+}
+
+.progress {
+  background: #DE515D;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.submit_button {
+  min-width: 200px !important;
+  background: #DE515D !important;
+  border-radius: 0px !important;
+  border: none;
+}
+
+.small {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
